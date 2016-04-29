@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "jscs -p airbnb test index.js && mocha"
+    "test": "jscs test index.js && mocha"
   },
   "repository": {
     "type": "git",
@@ -26,5 +26,8 @@
   "devDependencies": {
     "jscs": "~3.0.3",
     "mocha": "~2.4.5"
+  },
+  "jscsConfig": {
+    "preset": "airbnb"
   }
 }
