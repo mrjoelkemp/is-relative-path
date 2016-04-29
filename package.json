@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/mrjoelkemp/is-relative-path",
   "devDependencies": {
-    "jscs": "~1.13.1",
-    "mocha": "~2.2.5"
+    "jscs": "~3.0.3",
+    "mocha": "~2.4.5"
   }
 }
