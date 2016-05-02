@@ -7,7 +7,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "jscs test index.js && mocha"
+    "test": "jscs test index.js && mocha",
+    "tdd": "mocha --watch"
   },
   "repository": {
     "type": "git",
