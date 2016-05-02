@@ -23,12 +23,12 @@ describe('is-relative-path', function () {
   it('throws on empty input', function () {
     assert.throws(function () {
       isRelative();
-    }, /`filename` should be an `String`, but got `undefined`: undefined/);
+    }, function (err) { return (err instanceof TypeError); });
   });
 
   it('throws on invalid input', function () {
     assert.throws(function () {
       isRelative(2);
-    }, /`filename` should be an `String`, but got `number`: 2/);
+    }, function (err) { return (err instanceof TypeError); });
   });
 });
