@@ -19,4 +19,16 @@ describe('is-relative-path', function () {
     assert.ok(!isRelative('foo'));
     assert.ok(!isRelative('foo/bar/car/baz.js'));
   });
+
+  it('throws on empty input', function () {
+    assert.throws(function () {
+      isRelative();
+    }, function (err) { return (err instanceof TypeError); });
+  });
+
+  it('throws on invalid input', function () {
+    assert.throws(function () {
+      isRelative(2);
+    }, function (err) { return (err instanceof TypeError); });
+  });
 });
