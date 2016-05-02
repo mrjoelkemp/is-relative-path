@@ -19,4 +19,16 @@ describe('is-relative-path', function () {
     assert.ok(!isRelative('foo'));
     assert.ok(!isRelative('foo/bar/car/baz.js'));
   });
+
+  it('throws on empty input', function () {
+    assert.throws(function () {
+      isRelative();
+    }, /`filename` should be an `String`, but got `undefined`: undefined/);
+  });
+
+  it('throws on invalid input', function () {
+    assert.throws(function () {
+      isRelative(2);
+    }, /`filename` should be an `String`, but got `number`: 2/);
+  });
 });
