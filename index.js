@@ -1,7 +1,9 @@
+var path = require('path');
+
 /**
  * @param  {String}  filename
  * @return {Boolean}
  */
 module.exports = function (filename) {
-  return filename[0] === '.';
+  return !path.isAbsolute(filename) && filename[0] === '.';
 };
