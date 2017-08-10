@@ -6,7 +6,7 @@
 
 ### Usage
 
-#### `isAbsolute(path)`
+#### `isRelative(path)`
 
 - `path` `<string>`
 - Returns: `<boolean>`
