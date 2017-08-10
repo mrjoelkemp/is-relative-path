@@ -3,6 +3,9 @@
   "version": "1.0.2",
   "description": "Whether or not a given path is relative",
   "main": "index.js",
+  "engines": {
+    "node": ">=0.11.2"
+  },
   "directories": {
     "test": "test"
   },
@@ -24,7 +27,7 @@
   },
   "homepage": "https://github.com/mrjoelkemp/is-relative-path",
   "devDependencies": {
-    "jscs": "~3.0.3",
+    "jscs": "^2.0.0",
     "mocha": "~2.4.5"
   },
   "jscsConfig": {
