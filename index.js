@@ -1,13 +1,9 @@
-var util = require('util');
+var isAbsolute = require('path').isAbsolute;
 
 /**
- * @param  {String}  filename
+ * @param  {String}  path
  * @return {Boolean}
  */
-module.exports = function (filename) {
-  if (typeof filename !== 'string') {
-    throw new TypeError('Path must be a string. Received ' + util.inspect(filename));
-  }
-
-  return filename[0] === '.';
+module.exports = function isRelative(path) {
+  return !isAbsolute(path);
 };
