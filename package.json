@@ -1,6 +1,6 @@
 {
   "name": "is-relative-path",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "Whether or not a given path is relative",
   "main": "index.js",
   "engines": {
